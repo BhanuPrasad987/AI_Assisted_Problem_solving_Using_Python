@@ -1,0 +1,49 @@
+<!--Generate a Java Script script that validates a simple login form (non-empty username/password)
+#The Expected output should include:
+#Working on submit JS validation.
+#Clear error messages if inputs are empty.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // stops form from submitting & prevents 405 error
+
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let errors = "";
+
+            if (username === "") {
+                errors += "⚠ Username cannot be empty.\n";
+            }
+            if (password === "") {
+                errors += "⚠ Password cannot be empty.\n";
+            }
+
+            if (errors !== "") {
+                alert(errors); // show clear error messages
+            } else {
+                alert("Login Successful ✔"); // success output
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Login Form</h2>
+
+    <form onsubmit="validateForm(event)">
+        <label>Username:</label>
+        <input type="text" id="username"><br><br>
+
+        <label>Password:</label>
+        <input type="password" id="password"><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

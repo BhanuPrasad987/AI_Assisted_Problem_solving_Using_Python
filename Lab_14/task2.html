@@ -1,0 +1,102 @@
+<!--# Refactor previous task1.py and student_info_portal.html Student Info Portal HTML by adding CSS styling.
+# Requirements:
+# - Responsive navigation bar using flexbox
+# - Center the main content section
+# - Footer should have light gray background with padding
+# - HTML + CSS combined in one file (no external CSS)
+# - Add comments explaining how CSS classes/styles work
+# - Wrap code inside python with open() using try-except
+# - Save file as student_info_portal_styled.html
+#refactor with with open() and try-except:
+
+Generate final code now.
+-->
+try:
+    with open('student_info_portal_styled.html', 'w') as f:
+        f.write("""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info Portal</title>
+    <style>
+        /* Basic reset and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Header styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        /* Navigation bar styling using flexbox */
+        nav {
+            display: flex;
+            justify-content: center; /* Center nav items */
+            background-color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Flex container for nav items */
+        }
+        nav ul li {
+            margin: 0 15px; /* Spacing between nav items */
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #575757; /* Hover effect */
+        }
+        /* Footer styling */
+        footer {
+            background-color: #f1f1f1; /* Light gray background */
+            text-align: center;
+            padding: 10px 0; /* Padding for spacing */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Center main content */
+        main {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 60vh; /* Minimum height for main content */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>  
+    <header>
+        <h1>Student Info Portal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Welcome to the Student Info Portal. Use the navigation bar to explore.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Student Info Portal</p>
+    </footer>
+</body>
+</html>""")
+except IOError as e:
+    print(f"An error occurred while writing the file: {e}")
+    
