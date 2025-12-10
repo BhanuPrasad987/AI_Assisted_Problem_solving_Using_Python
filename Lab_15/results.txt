@@ -1,0 +1,5 @@
+{"city": "Delhi", "temp": 13.05, "humidity": 76, "weather": "Mist"}
+{"city": "Bengaluru", "temp": 17.52, "humidity": 90, "weather": "Mist"}
+{"city": "Hyderabad", "temp": 20.73, "humidity": 77, "weather": "Mist"}
+{"city": "Texas", "temp": 13.97, "humidity": 41, "weather": "Overcast clouds"}
+{"city": "United States of America", "temp": 5.98, "humidity": 45, "weather": "Clear sky"}
