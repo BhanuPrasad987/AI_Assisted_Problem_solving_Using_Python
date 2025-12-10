@@ -1,0 +1,16 @@
+review_id,review_text,rating,clean_text,rating_normalized
+1,amazing movie!,8.0,amazing movie!,0.75
+2,terrible acting & plot!!!,2.0,terrible acting & plot!!!,0.0
+3,amazing movie!,8.0,amazing movie!,0.75
+4,terrible acting & plot!!!,8.0,terrible acting & plot!!!,0.75
+5,amazing movie!,5.0,amazing movie!,0.375
+6,terrible acting & plot!!!,2.0,terrible acting & plot!!!,0.0
+7,amazing movie!,8.0,amazing movie!,0.75
+8,terrible acting & plot!!!,8.0,terrible acting & plot!!!,0.75
+9,amazing movie!,10.0,amazing movie!,1.0
+10,terrible acting & plot!!!,5.0,terrible acting & plot!!!,0.375
+11,amazing movie!,8.0,amazing movie!,0.75
+12,terrible acting & plot!!!,2.0,terrible acting & plot!!!,0.0
+13,amazing movie!,10.0,amazing movie!,1.0
+14,terrible acting & plot!!!,8.0,terrible acting & plot!!!,0.75
+15,amazing movie!,8.0,amazing movie!,0.75
